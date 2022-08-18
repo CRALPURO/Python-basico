@@ -1,11 +1,8 @@
 # ------------------------------------------     Taller Metodos numericos   --------------------------------------------------------------#
-#1
+#2
 
 #Definición de librerias
 import math as mt 
-
-#Definición de listas
-Lista_1 = []
 
 #Definición de varibales
 Var_inicial = 0
@@ -14,27 +11,17 @@ Var_trabajo = 0
 
 #Definición de funciones 
 def Eleva(x):
-    return mt.pow(x,2)
+    return mt.pow(2,x)
 
 #MAIN
-Var_inicial = int(input("Diguite cuales son los primeros x numeros que desea elevar al cuadrado: "))
+Var_inicial = int(input("Diguite cual el numero maximo de elevación que desea: "))
 
 while Contador <= Var_inicial:
 
-    Var_trabajo = Contador
-    Lista_1.append(Eleva(Var_trabajo))
+    Var_trabajo = Var_trabajo + (1/Eleva(Contador))
     Contador = Contador + 1
 
-print(Lista_1)
 
-
-
-
-
-
-    
-
-
-
+print(Var_trabajo)
 
 
